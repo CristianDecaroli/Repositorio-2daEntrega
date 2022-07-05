@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@800&family=Lato:wght@300&display=swap');
+
+html {
+    font-family: 'Arima Madurai', cursive;
+    font-size: 62.5%;
+    color: rgb(36, 35, 35);
+}
+
+body {
+    background-color: #eafcfec0;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.h1-titulo {
+    background-color: #fae4e6;
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+h2 {
+    background-color: #fae4e6;
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+main p {
+    font-size: 3rem;
+    line-height: 5rem;
+}
+
+.p-staff {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+nav {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+#botonera {
+    background-color: rgb(245, 178, 187);
+    padding-right: 3rem;
+}
+
+header {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(250,228,230,1) 0%, rgba(184,245,246,1) 100%);
+}
+
+    header img {
+        height: 90%;
+        width: auto;
+    }
+
+section div img {
+    height: 300px;
+    width: 300px;
+}
+
+footer {
+    background-color: rgb(245, 178, 187);
+    font-size: 1.5rem;
+}
+
+footer img {
+    height: 4rem;
+    height: 4rem;
+}
+
+#section-background {
+    background-color: #fff7f8;
+}
+
+/* ANIMACIONES Y TRANSFORMACIONES */
+
+.rotate:hover {
+    transform: rotateZ(-360deg);
+    transition: 2s;
+}
+
+.scale:hover {
+    transform: scale(1.1);
+}
+
+@keyframes opacity {
+    from{opacity: 0}
+    to{opacity: 1}
+}
+
+html {
+    animation-name: opacity;
+    animation-duration: 1s;
+}
+
+@media (max-width: 992px) {
+    .scale:hover {
+        transform: none;
+    }
+}
